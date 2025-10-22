@@ -21,7 +21,7 @@ It aims to provide insights into the University’s overall teaching proficiency
 
 <img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/af0037ef-6cb7-4825-b127-274ee49ded28" />
 
-### Step 1: Schema Validation for Lighter Glue Transformation
+# Step 1: Schema Validation for Lighter Glue Transformation
 This step stores and separates Validated schema from Invalid Schema. Since Glue can't gracefully handle issues with the Schema, this step ensures that only compliant-data proceeds to the Main Transformation. 
 
 ### Step 2: Data Transformation
