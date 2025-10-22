@@ -45,6 +45,11 @@ This is where our curated data feeds into a live dashboard
 
 While this can be fully automated using tools like Microsoft Power Automate, the process currently remains manually supervised to optimize cost and ensure final data verification before distribution.
 
+## 🔍 Preview
+
+![Dashboard Page 1](Dashboard_1.png)
+![Dashboard Page 2](Dashboard_2.png)
+
 ##  🧩 Data Pipeline Development Process + Code Snippets
 
 Step-by-step procedure to develop the ETL:
@@ -67,7 +72,13 @@ Step-by-step procedure to develop the ETL:
 17.	Apply the least-privilege principle to every IAM role and policy used.
 18.	Connect S3, Lambda, and Glue to CloudWatch for centralized error logging and alerting.
 
+🐍 [DMC_Alumni_Scripts.ipynb](DMC_Alumni_Scripts.ipynb)
 
+Includes:
+- Lambda Schema Validator
+- Glue Job Script
+- Lambda-Athena Global Deduplication
+- Python Sheet Exporter
 
 
 
