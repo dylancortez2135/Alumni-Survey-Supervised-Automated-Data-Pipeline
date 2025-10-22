@@ -45,7 +45,7 @@ This is where our curated data feeds into a live dashboard
 
 While this can be fully automated using tools like Microsoft Power Automate, the process currently remains manually supervised to optimize cost and ensure final data verification before distribution.
 
-##  🧩 4. Data Pipeline Development Process + Code Snippets
+##  🧩 Data Pipeline Development Process + Code Snippets
 
 Step-by-step procedure to develop the ETL:
 1.	Create an S3 bucket with folders for raw, valid, invalid, transformed, and archive data.
@@ -66,6 +66,7 @@ Step-by-step procedure to develop the ETL:
 16.	Use Power Automate to export and email the dashboard to clients weekly.
 17.	Apply the least-privilege principle to every IAM role and policy used.
 18.	Connect S3, Lambda, and Glue to CloudWatch for centralized error logging and alerting.
+
 
 
 
