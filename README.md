@@ -19,4 +19,5 @@ It aims to provide insights into the University’s overall teaching proficiency
 
 ## ⚙️ Architecture
 
-<img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/a200784c-b7bc-4e18-92c3-5faf3c88183b" />
+
+<img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/a92f3ee9-0d39-4189-bb3c-a3e068f738fd" />
