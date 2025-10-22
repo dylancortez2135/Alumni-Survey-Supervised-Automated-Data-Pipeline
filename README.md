@@ -19,5 +19,26 @@ It aims to provide insights into the University’s overall teaching proficiency
 
 ## ⚙️ Architecture
 
+<img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/af0037ef-6cb7-4825-b127-274ee49ded28" />
 
-<img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/a92f3ee9-0d39-4189-bb3c-a3e068f738fd" />
+### Step 1: Schema Validation for Lighter Glue Transformation
+This step stores and separates Validated schema from Invalid Schema. Since Glue can't gracefully handle issues with the Schema, this step ensures that only compliant-data proceeds to the Main Transformation. 
+
+### Step 2: Data Transformation
+This is where the main transformation occur including deduplication, data standardization, and format normalization.
+
+### Step 3: Data Storage
+This is where the cleaned data is stored both in Processed-Data/ and Archive/ "folders". Additionally, the data is also registered in a Glue Data Catalog 
+
+### Step 4: Global Deduplication
+Since we are dealing with batches of survey data, this is a crucial step that ensures there are no duplicate records across the multiple uploads. 
+
+### Step 5: Data Analysis
+This is where our curated data feeds into a live dashboard
+
+### Step 6: Sending the Dashboard Every Week
+While this can be fully automated using tools like Microsoft Power Automate, the process currently remains manually supervised to optimize cost and ensure final data verification before distribution.
+
+
+
+
