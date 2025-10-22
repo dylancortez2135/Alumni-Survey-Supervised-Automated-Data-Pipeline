@@ -6,6 +6,11 @@ This project demonstrates a supervised automated data pipeline that automaticall
 
 This is a synthetic version of a real, on-going project that aims to provide a Data Pipeline that converts batches of survey data into actionable and data-backed insights. All process — from data ingestion to the creation of the dashboard — are all automatic except one supervised step: Running the Glue Job (Main Transformation) to ensure reliability and cost efficiency.
 
+## 🧰 Tech Stack
+- **AWS Services:** S3, Lambda, Glue, Athena, SNS, EventBridge, CloudWatch  
+- **Data Tools:** Power BI, Pandas
+- **Languages:** Python
+
 ## 🧠 Objectives
 
 The survey collects responses from a local University’s alumni to assess demographics and post-graduation performance metrics.
@@ -22,30 +27,30 @@ It aims to provide insights into the University’s overall teaching proficiency
 <img width="1920" height="1080" alt="DMC Alumni Survey Data Pipeline Flow Chart" src="https://github.com/user-attachments/assets/af0037ef-6cb7-4825-b127-274ee49ded28" />
 
 **Step 1: Schema Validation for Lighter Glue Transformation.**
-
-This step stores and separates Validated schema from Invalid Schema. Since Glue can't gracefully handle issues with the Schema, this step ensures that only compliant-data proceeds to the Main Transformation. 
+  
+  This step stores and separates Validated schema from Invalid Schema. Since Glue can't gracefully handle issues with the     Schema, this step ensures that only compliant-data proceeds to the Main Transformation. 
 
 **Step 2: Data Transformation.**
 
-This is where the main transformation occur including deduplication, data standardization, and format normalization.
+  This is where the main transformation occur including deduplication, data standardization, and format normalization.
 
 **Step 3: Data Storage.**
 
-This is where the cleaned data is stored both in Processed-Data/ and Archive/ "folders". Additionally, the data is also registered in a Glue Data Catalog 
+  This is where the cleaned data is stored both in Processed-Data/ and Archive/ "folders". Additionally, the data is also     registered in a Glue Data Catalog 
 
 **Step 4: Global Deduplication.**
-
-Since we are dealing with batches of survey data, this is a crucial step that ensures there are no duplicate records across the multiple uploads. 
+  
+  Since we are dealing with batches of survey data, this is a crucial step that ensures there are no duplicate records across the multiple uploads. 
 
 **Step 5: Data Analysis.**
 
-This is where our curated data feeds into a live dashboard
+  This is where our curated data feeds into a live dashboard
 
 **Step 6: Sending the Dashboard Every Week.**
 
-While this can be fully automated using tools like Microsoft Power Automate, the process currently remains manually supervised to optimize cost and ensure final data verification before distribution.
+  While this can be fully automated using tools like Microsoft Power Automate, the process currently remains manually supervised to optimize cost and ensure final data verification before distribution.
 
-## 🔍 Preview
+## 🔍 Dashboard Preview
 
 ![Dashboard Page 1](Dashboard_1.png)
 ![Dashboard Page 2](Dashboard_2.png)
@@ -72,13 +77,30 @@ Step-by-step procedure to develop the ETL:
 17.	Apply the least-privilege principle to every IAM role and policy used.
 18.	Connect S3, Lambda, and Glue to CloudWatch for centralized error logging and alerting.
 
-🐍 [DMC_Alumni_Scripts.ipynb](DMC_Alumni_Scripts.ipynb)
 
-Includes:
-- Lambda Schema Validator
-- Glue Job Script
-- Lambda-Athena Global Deduplication
-- Python Sheet Exporter
+
+🐍 Source Code Reference:
+[DMC_Alumni_Scripts.ipynb](DMC_Alumni_Scripts.ipynb)
+
+  Includes:
+  - Lambda Schema Validator
+
+  - Glue Job Script
+    
+  - Lambda-Athena Global Deduplication
+    
+  - Python Sheet Exporter
+
+
+## 📊 Raw Data :
+[DMC_Alumni_Survey_Raw.csv](DMC_Alumni_Survey_Raw.csv)
+
+
+## ✉️ Contact
+For questions, feedback, or collaboration:
+
+**Dylan Cortez**
+📧 cortezdylan2135@gmail.com
 
 
 
