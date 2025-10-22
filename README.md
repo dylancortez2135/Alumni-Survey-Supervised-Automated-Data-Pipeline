@@ -8,7 +8,7 @@ This is a synthetic version of a real, on-going project that aims to provide a D
 
 ## 🧰 Tech Stack
 - **AWS Services:** S3, Lambda, Glue, Athena, SNS, EventBridge, CloudWatch  
-- **Data Tools:** Power BI, Pandas
+- **Data Tools:** Power BI, Jupyter Notebooks, Pandas
 - **Languages:** Python
 
 ## 🧠 Objectives
