@@ -91,6 +91,19 @@ Step-by-step procedure to develop the ETL:
     
   - Python Sheet Exporter
 
+🐍 (NEW!) Source Code Reference:
+[DMC_Alumni_Scripts_With_checkpoints.ipynb](DMC_Alumni_Scripts_With_checkpoints.ipynb)
+
+
+  Includes:
+  - Lambda Schema Validator (NEW! Accounts for the new datetime column)
+
+  - Glue Job Script (NEW! Accounts for the new datetime column)
+    
+  - Lambda-Athena Global Deduplication
+    
+  - Python Sheet Exporter (NEW! Adds timestamps as checkpoints so only new rows are added on subsequent runs)
+
 
 ## 📊 Raw Data :
 [DMC_Alumni_Survey_Raw.csv](DMC_Alumni_Survey_Raw.csv)
