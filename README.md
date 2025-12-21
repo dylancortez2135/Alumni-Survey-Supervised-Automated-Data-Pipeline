@@ -112,8 +112,9 @@ Step-by-step procedure to develop the ETL:
 ## ✉️ Contact
 For questions, feedback, or collaboration:
 
-**Dylan Cortez**
-📧 cortezdylan2135@gmail.com
+**Email**📧: dylancortez.data@gmail.com
+
+**LinkedIn**➡️: https://www.linkedin.com/in/dylan-anthony-cortez/
 
 
 
